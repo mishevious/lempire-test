@@ -10,3 +10,8 @@ $> ```git clone git@github.com:mishevious/lempire-test.git test-meteor-geoffrey;
 ## Unit tests
 
 $> ```meteor npm run test-app```
+
+## Default user
+
+- username : test
+- password : test
