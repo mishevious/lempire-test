@@ -1,0 +1,172 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #e5dcc5;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #848fa5;
+  transition: 0.2s color;
+}
+
+a:hover {
+  color:#4C4C47;
+}
+
+button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button + button, a + button {
+  margin-left: 12px;
+}
+
+button:hover {
+  filter: brightness(140%);
+  transform: scale(1.2);
+}
+
+button:active {
+  filter: brightness(80%);
+  transform: scale(1.1);
+}
+
+.app__title {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e5dcc5;
+  background: #2d2d2a;
+  font-size: 18px;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.navbar__export-button {
+  color: white;
+  background: green;
+}
+
+.navbar__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-container {
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+
+.links-list {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-item {
+  height: 40px;
+  width: 100%;
+  background: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #2d2d2a;
+  border-radius: 4px;
+  padding: 0px 16px;
+}
+
+.link-item__delete {
+  background-color: #CC2222;
+  color: #e2e2e2;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 50px);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form > div {
+  margin: 8px;
+}
+
+.login-form > div > label {
+  font-weight: bold;
+}
+
+.login-form > div  > input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 6px;
+  background: transparent;
+  border: 1px solid #aaa;
+  width: 100%;
+  font-size: 1em;
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+.login-form > div > input:focus {
+  outline: 0;
+}
+
+.login-form > div > button {
+  background-color: #62807e;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.link-item__progress-bar {
+  height: 20px;
+  width: 240px;
+  background: grey;
+}
+
+.link-item-progress-bar__progress {
+  background: #2d2d2a;
+  width: 1%;
+  border-radius: 0 50% 0 0;
+}
+
+.links-list__empty-message {
+  color: black;
+  text-shadow: 2px 2px 4px pink;
+}

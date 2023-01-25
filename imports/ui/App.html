@@ -1,0 +1,54 @@
+<body>
+  {{> app }}
+</body>
+
+<template name="app">
+  <div class="app">
+    <div class="app__title">Test Meteor</div>
+    {{#if isUserLogged}}
+      {{> navbar}}
+      <div class="main-container">
+        {{> linksList}}
+      </div>
+    {{else}}
+      {{> login }}
+    {{/if}}
+    
+  </div>
+</template>
+  
+  <template name="navbar">
+    <div class="navbar">
+      <div class="navbar__title">
+        Links list {{#if isLoading}}(loading...){{/if}} {{test}}
+      </div>
+      <button class="navbar__export-button js-export-button">Export</button>
+    </div>
+  </template>
+  
+  <template name="linksList">
+    <div class="links-list">
+        {{#each links}}
+            {{> linkItem}}
+        {{else}}
+        <div class="links-list__empty-message">
+          You should export to get a Lembulous link !
+        </div>
+        {{/each}}
+    </div>
+  </template>
+
+<template name="linkItem">
+    <div class="link-item">
+      <div>
+        {{#if link}}
+          <a href="{{link}}" target="_blank">{{link}}</a>
+        {{else}}
+          Export in progress ... ({{progress}}%)
+        {{/if}}
+      </div>
+      <div>
+        <button class="js-delete link-item__delete">Delete</button>
+      </div>
+    </div>
+</template>
