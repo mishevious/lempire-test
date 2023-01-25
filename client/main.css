@@ -6,7 +6,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background: #e5dcc5;
+  background: #f3f4f8;
+  color: #4d19ff;
 }
 
 .app {
@@ -30,6 +31,7 @@ button {
   border-radius: 4px;
   transition: 0.2s;
   cursor: pointer;
+  background: #3898ec;
 }
 
 button + button, a + button {
@@ -52,8 +54,9 @@ button:active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #e5dcc5;
-  background: #2d2d2a;
+  color: #2a2a2a;
+  font-weight: 900;
+  background: #ececfe;
   font-size: 18px;
 }
 
@@ -67,7 +70,6 @@ button:active {
 
 .navbar__export-button {
   color: white;
-  background: green;
 }
 
 .navbar__title {
@@ -84,7 +86,6 @@ button:active {
   padding: 16px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
 }
@@ -92,17 +93,18 @@ button:active {
 .link-item {
   height: 40px;
   width: 100%;
-  background: #e1e1e1;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #2d2d2a;
+  border: 1px solid #4d19ff;
+  color: #4d19ff;
   border-radius: 4px;
   padding: 0px 16px;
 }
 
 .link-item__delete {
-  background-color: #CC2222;
+  background-color: #C73E1D;
   color: #e2e2e2;
 }
 
@@ -128,7 +130,8 @@ button:active {
   box-sizing: border-box;
   padding: 10px 6px;
   background: transparent;
-  border: 1px solid #aaa;
+  border: 1px solid #4d19ff;
+  color: #4d19ff;
   width: 100%;
   font-size: 1em;
   margin-right: 16px;
@@ -140,33 +143,13 @@ button:active {
 }
 
 .login-form > div > button {
-  background-color: #62807e;
-}
-
-.loading {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  justify-content: center;
-  align-items: center;
-
-  font-weight: bold;
-}
-
-.link-item__progress-bar {
-  height: 20px;
-  width: 240px;
-  background: grey;
-}
-
-.link-item-progress-bar__progress {
-  background: #2d2d2a;
-  width: 1%;
-  border-radius: 0 50% 0 0;
+  background-color: #4d19ff;
+  color: #e1e1e1;
 }
 
 .links-list__empty-message {
-  color: black;
-  text-shadow: 2px 2px 4px pink;
+  color: rgb(255, 144, 162);
+  /* text-shadow: 0px 0px 4px rgb(252, 165, 179); */
+  font-weight: 900;
+  font-size:18px;
 }
